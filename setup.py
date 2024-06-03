@@ -25,7 +25,7 @@ if platform.system() == 'Linux':
             ], 
             ['include', '/usr/src/jetson_multimedia_api/argus/samples/utils', '/usr/src/jetson_multimedia_api/include', '/usr/src/jetson_multimedia_api/include/libjpeg-8b', numpy.get_include()], 
             [('JPEGCODER_ARCH', 'jetson')],
-            library_dirs=['/usr/lib/aarch64-linux-gnu/tegra', 'build/lib'],
+            library_dirs=['/usr/lib/aarch64-linux-gnu/nvidia', 'build/lib'],
             libraries=['color_space', 'cudart', 'nvjpeg', 'cuda']
         )
     else:
